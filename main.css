@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Mukta:wght@300&display=swap');
+ *{ 
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Julee', cursive;
+}
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 300px 1fr;
+}
+
+aside{
+    background-color: #ffD700;
+}
+main{
+    padding: 20px;
+    overflow-y: scroll;
+}
+.aside-items{
+    display: flex;
+    justify-content: center;
+}
+
+.aside-items ul {
+    margin-top: 8rem;
+    width: 100%;
+}
+.aside-items ul li{
+    text-align: center;
+    list-style: none;
+    margin-top: 4rem;
+    font-size: 2rem;
+    width: 100%;
+}
+.aside-item ul li:hover{
+    background-color: rosybrown;
+    color: aqua;
+    cursor: pointer;
+}
+form{
+    max-width: 950px;
+    margin: auto;
+}
+form input[type="search"]{
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+form input[type="search"]::placeholder{
+    font-size: 15px;
+}
+
+section{
+    margin-top: 4rem;
+}
+.details{
+    max-width: 1200px;
+    margin: auto;
+}
+.details h1{
+    font-size: 25px;
+}
+
+.content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    border: 2px solid rgb(42, 8, 8);
+    border-radius: 15px;
+    border-left: 0;
+    border-right: 0;
+    width: 30%;
+    height: 40vh;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.box img{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.box:hover{
+    transform: rotateY( 180deg );
+    background: #f0faf3;
+}
+
+.card-back{
+    margin-top: 5rem;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.card-back h1,p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
